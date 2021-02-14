@@ -1,0 +1,198 @@
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with inotify reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-221-136
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:56:15] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:56:25] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/bastien/dev_work/Simplon/api_rest_flas/mise_en_situation/run.py', reloading
+INFO:werkzeug: * Detected change in '/home/bastien/dev_work/Simplon/api_rest_flas/mise_en_situation/run.py', reloading
+INFO:werkzeug: * Restarting with inotify reloader
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:56:42] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:56:48] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:57:10] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:57:16] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:58:18] "[33mPOST /sentimentanalysis?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9&text=Great%20! HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:58:39] "[33mPOST /SentimentAnalysis?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9&text=Great%20! HTTP/1.1[0m" 404 -
+ERROR:run:Exception on /sentiment [POST]
+Traceback (most recent call last):
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/bastien/dev_work/Simplon/api_rest_flas/mise_en_situation/run.py", line 26, in post
+    res = set(postedData.keys())
+AttributeError: 'NoneType' object has no attribute 'keys'
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:59:45] "[35m[1mPOST /sentiment?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9&text=Great%20! HTTP/1.1[0m" 500 -
+ERROR:run:Exception on /sentiment [POST]
+Traceback (most recent call last):
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/bastien/.local/lib/python3.8/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/bastien/dev_work/Simplon/api_rest_flas/mise_en_situation/run.py", line 26, in post
+    res = set(postedData.keys())
+AttributeError: 'NoneType' object has no attribute 'keys'
+INFO:werkzeug:127.0.0.1 - - [08/Jan/2021 09:59:55] "[35m[1mPOST /sentiment?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ&text=Great%20! HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 918-205-346
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-253-116
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:34:27] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:34:38] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:35:33] "[35m[1mPOST /sentiment?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9&text=Excellent HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:35:41] "[35m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-253-116
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:36:47] "[35m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:37:09] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:38:42] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:40:08] "[35m[1mPOST /sentiment HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:41:30] "[35m[1mPOST /sentiment HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-253-116
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:44:35] "[37mPOST /sentiment HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:46:33] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:48:07] "[31m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 400 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:48:27] "[31m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 400 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:48:40] "[31m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 400 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:48:47] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-253-116
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 09:48:54] "[35m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [08/Jan/2021 10:05:57] "[35m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with inotify reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 212-221-136
+INFO:werkzeug: * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 174-894-334
+INFO:werkzeug: * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 152-428-519
+INFO:werkzeug: * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 197-211-600
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 197-211-600
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 197-211-600
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:15:23] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 10:15:28.765163, predicted Positif from Excellent!
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:15:28] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:root:Missing fields : {missing_fields} 
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:17:03] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 10:17:16.950552, predicted Positif from Excellent!
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:17:16] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:root:Missing fields : {missing_fields} 
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:18:24] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:19:06] "[35m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 500 -
+INFO:root:Missing fields : {missing_fields} 
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:19:11] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:19:21] "[31m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 400 -
+INFO:root:Missing fields : {missing_fields} 
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:19:26] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 197-211-600
+INFO:root:Missing fields : text 
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:25:45] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 10:27:58.331695, predicted Positif from Nul à chier
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:27:58] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 10:28:13.028860, predicted Positif from Nul à chier, le service est dégueulasse
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:28:13] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 10:28:21.029940, predicted Positif from Nul à chier, le service est dégueulasse mais pas autant que la bouffe
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:28:21] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 10:28:33.308368, predicted Positif from C'est vraiment mauvais jusqu'au bout
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 10:28:33] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 197-211-600
+INFO:root:At 2021-01-08 11:49:48.381924, predicted Positif from C'est vraiment mauvais jusqu'au bout
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 11:49:48] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 11:50:03] "[31m[1mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 400 -
+INFO:root:Missing fields : text 
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 11:50:08] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 197-211-600
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 518-027-026
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 11:55:22] "[37mGET /getlogs HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.20.0.1 - - [08/Jan/2021 14:07:28] "[37mGET /getlogs HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 518-027-026
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 518-027-026
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-519-002
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:22:57] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-519-002
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:23:09] "[37mGET /welcome HTTP/1.1[0m" 200 -
+INFO:root:Missing fields : text 
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:23:52] "[37mPOST /sentiment?token=%27eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%27&text=%27Excellent%27 HTTP/1.1[0m" 200 -
+INFO:root:Missing fields : text 
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:23:59] "[37mPOST /sentiment HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 16:24:33.293982, predicted Positif from Ce restau était le pire dans lequel j'ai mangé
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:24:33] "[37mPOST /sentiment HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 16:24:57.359868, predicted Positif from insatisfait
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:24:57] "[37mPOST /sentiment HTTP/1.1[0m" 200 -
+INFO:root:At 2021-01-08 16:25:03.342073, predicted Négatif from je suis insatisfait
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:25:03] "[37mPOST /sentiment HTTP/1.1[0m" 200 -
+INFO:root:Missing fields : token 
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:25:20] "[37mPOST /sentiment HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:25:26] "[37mPOST /sentiment HTTP/1.1[0m" 200 -
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:27:35] "[37mGET /getlogs HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/app/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-519-002
+INFO:werkzeug:172.21.0.1 - - [08/Jan/2021 16:28:06] "[37mGET /getlogs HTTP/1.1[0m" 200 -
