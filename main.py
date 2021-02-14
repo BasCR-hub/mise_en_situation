@@ -22,7 +22,7 @@ def request_logs():
 
 @app.post("/get_sentiment/")
 def return_sentiment(comment: str):
-        clf_pipe = load('sentiment_pipe.joblib')
+        clf_pipe = load('updated_sentiment_classifier.joblib')
         prediction = clf_pipe.predict([comment])[0]
         prediction = "Positif" if prediction == 1 else "Négatif"
         logging.info(f'At {dt.datetime.now()}, predicted {prediction} from {comment}')
