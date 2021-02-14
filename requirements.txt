@@ -1,5 +1,4 @@
-jsonify
-flask
-flask_restful
+fastapi
 joblib
 sklearn
+datetime

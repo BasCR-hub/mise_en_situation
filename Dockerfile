@@ -1,9 +1,9 @@
-FROM ubuntu:20.04
-RUN apt-get update -y && \
-    apt-get install -y python3-pip python3-dev
-WORKDIR ./app
-EXPOSE 8080
-COPY . .
-RUN pip3 install -r requirements.txt
-ENTRYPOINT ["python3"]
-CMD ["run.py"]
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+WORKDIR /app
+COPY . /app
+COPY requirements.txt .
+EXPOSE 80
+RUN apt-get update
+#RUN apt-get -y install python3-dev
+RUN pip --no-cache-dir install -r requirements.txt
+CMD uvicorn main:app --host 0.0.0.0 --port 80 --reload

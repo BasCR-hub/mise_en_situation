@@ -1,11 +1,11 @@
-version: "3.8"
+version: "3.7"
 services:
   app:
-    image: flask
+    image: tiangolo/uvicorn-gunicorn-fastapi:python3.7
     build:
       context : .
       dockerfile: Dockerfile
     volumes:
       - .:/app
     ports:
-      - 8080:8080
+      - 80:80
